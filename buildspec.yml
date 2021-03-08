@@ -1,6 +1,8 @@
 version: 0.2
 env:
-  PROJECT: DotnetDemo
+  variables:
+    PROJECT: DotnetDemo
+    
 phases:
   install:
     runtime-version:
@@ -9,9 +11,9 @@ phases:
   build:
     commands:
       - dotnet build
-      - dotnet publish -c release -r win10-x64 -o ./build_ouput ${PROJECT}.csproj
+      - dotnet publish -c release -r win10-x64 -o ./build_output ${PROJECT}.csproj
 
 artifacts:
   files:
-    - build_ouput/**/*
+    - build_output/**/*
     - appspec.yml
