@@ -1,2 +1,1 @@
-cd %FOLDER%
-dotnet run
+start c:\users\administrator\documents\dotnetdemo\DotnetDemo
