@@ -5,12 +5,12 @@ files:
       destination: c:\users\administrator\documents\dotnetdemo
 hooks:
     ApplicationStop:
-		#
+	#
     BeforeInstall:
-		#
+	#
     Install:
-		#
+	#
     AfterInstall:
-		#
+	#
     ApplicationStart:
-		#
+	#
