@@ -1,0 +1,2 @@
+cd %FOLDER%
+dotnet run

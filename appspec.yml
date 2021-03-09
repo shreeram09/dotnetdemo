@@ -1,5 +1,26 @@
 version: 0.0
 os: windows
 files:
-    - source: \
+    - source: \build_output
       destination: c:\users\administrator\documents\dotnetdemo
+
+hooks:
+  ApplicationStop:
+    - location: stop.bat
+      timeout: 300
+  
+  BeforeInstall:
+    - location: before.bat
+      timeout: 300
+  
+  Install:
+    - location: install.bat
+      timeout: 300
+  
+  AfterInstall:
+    - location: after.bat
+      timeout: 300
+
+  ApplicationStart:
+    - location: start.bat
+      timeout: 300
