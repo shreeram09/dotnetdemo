@@ -1,3 +1,16 @@
 version: 0.0
 os: windows
-
+files:
+    - source: \
+      destination: c:\users\administrator\documents\dotnetdemo
+hooks:
+    ApplicationStop:
+		#
+    BeforeInstall:
+		#
+    Install:
+		#
+    AfterInstall:
+		#
+    ApplicationStart:
+		#
